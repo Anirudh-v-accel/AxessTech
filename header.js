@@ -38,6 +38,7 @@ class MyHeader extends HTMLElement {
                             </ul>
                           </li>
                           <li><a href="https://axesstechnology.in/blog/">Blog</a></li>
+                          <li><a href="blog-2.html">Blog 2</a></li>
                           <li><a href="contact.html">Contact</a></li>
                         </ul>
                       </nav>
@@ -66,10 +67,11 @@ class MyHeader extends HTMLElement {
     setActiveMenuItem() {
       const currentPage = window.location.pathname.split("/").pop(); // Get the current page name
       const menuItems = this.querySelectorAll(".ep-header__menu a"); // Select all menu links
-  
+
       menuItems.forEach(item => {
         const href = item.getAttribute("href"); // Get the href of each menu item
-        if (href === currentPage) {
+        const isBlog2 = href === 'blog-2.html' && (currentPage.includes('blog-2'));
+        if (href === currentPage || isBlog2) {
           item.parentElement.classList.add("active"); // Add 'active' class to the parent <li>
         } else {
           item.parentElement.classList.remove("active"); // Remove 'active' class if it's not the current page

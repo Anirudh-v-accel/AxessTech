@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="robots" content="all" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/logo/logo2.png" />
+
+    <!-- Title -->
+    <title>Blog 2 – Article</title>
+    <meta id="meta-description" name="description" content="Read this article from Axess Technology." />
+
+    <!-- Vendor CSS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/plugins/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/plugins/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/plugins/css/maginific-popup.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/plugins/css/nice-select.min.css" />
+    <link rel="stylesheet" href="assets/plugins/css/icofont.css" />
+    <link rel="stylesheet" href="assets/plugins/css/uicons.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Page specific optional overrides -->
+    <style>
+      .strapi-warning {
+        background: #fffaf0;
+        color: #8a6100;
+        border: 1px solid #ffe2b3;
+        padding: 12px 16px;
+        border-radius: 8px;
+        margin: 16px 0;
+        display: none;
+      }
+      .ep-blog__details-cover-placeholder {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background: var(--ep-offwhite-color);
+      }
+      .ep-blog__details-meta a { color: #fff; text-decoration: underline; }
+      /* Avoid heading hidden behind fixed header */
+      .ep-breadcrumbs { padding: 140px 0 40px; }
+      @media (min-width: 992px) { .ep-breadcrumbs { padding: 180px 0 60px; } }
+    </style>
+
+    <!-- Common components -->
+    <script src="header.js?v=2" defer></script>
+    <script src="mobilemenu.js?v=2" defer></script>
+    <script src="footer.js" defer></script>
+    <script src="clients.js" defer></script>
+    <script src="partner.js" defer></script>
+
+    <!-- Strapi config and Blog 2 logic -->
+    <script src="strapi-config.js?v=1" defer></script>
+    <script src="blog2.js?v=1" defer></script>
+  </head>
+
+  <body class="ep-magic-cursor">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="ep-preloader" class="ep-preloader">
+        <div class="animation-preloader">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- WhatsApp -->
+    <div class="whatsapp-wrap">
+      <a href="https://wa.me/917604930161" target="_blank" class="btn-whatsapp-pulse">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <!-- Magic Cursor -->
+    <div id="magic-cursor"><div id="ball"></div></div>
+
+    <!-- Back To Top -->
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+
+    <!-- Mobile Menu -->
+    <my-mobile-menu></my-mobile-menu>
+
+    <!-- Header -->
+    <my-header></my-header>
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- Breadcrumbs -->
+          <div class="ep-breadcrumbs breadcrumbs-bg background-image" style="background-image: url('assets/images/breadcrumbs-bg.png')">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-12">
+                  <div class="ep-breadcrumbs__content">
+                    <h3 id="breadcrumbsTitle" class="ep-breadcrumbs__title">Blog 2</h3>
+                    <ul class="ep-breadcrumbs__menu">
+                      <li><a href="index.html">Home</a></li>
+                      <li><i class="fi-bs-angle-right"></i></li>
+                      <li><a href="blog-2.html">Blog 2</a></li>
+                      <li class="active"><a id="breadcrumbsActive" href="#">Article</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Details -->
+          <section class="ep-blog ep-section section-gap position-relative">
+            <div class="container ep-container">
+              <div id="strapiWarning" class="strapi-warning"></div>
+              <div class="row">
+                <div class="col-lg-8 col-12">
+                  <article id="articleContainer" class="ep-blog__details"></article>
+                </div>
+                <div class="col-lg-4 col-12">
+                  <aside class="ep-blog__sidebar mg-top-40">
+                    <div class="ep-blog__sidebar-widget">
+                      <h6 class="ep-blog__sidebar-title">Latest Posts</h6>
+                      <div id="latestPosts"></div>
+                    </div>
+                    <div class="ep-blog__sidebar-widget">
+                      <h6 class="ep-blog__sidebar-title">Tags</h6>
+                      <div id="tagsCloud" class="ep-blog__tags"><ul></ul></div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <my-clients></my-clients>
+          <my-partner></my-partner>
+          <my-footer></my-footer>
+        </main>
+      </div>
+    </div>
+
+    <!-- Vendor JS -->
+    <script src="assets/plugins/js/jquery.min.js"></script>
+    <script src="assets/plugins/js/jquery-migrate.js"></script>
+    <script src="assets/plugins/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/js/gsap/gsap.js"></script>
+    <script src="assets/plugins/js/gsap/gsap-scroll-to-plugin.js"></script>
+    <script src="assets/plugins/js/gsap/gsap-scroll-smoother.js"></script>
+    <script src="assets/plugins/js/gsap/gsap-scroll-trigger.js"></script>
+    <script src="assets/plugins/js/gsap/gsap-split-text.js"></script>
+    <script src="assets/plugins/js/wow.min.js"></script>
+    <script src="assets/plugins/js/owl.carousel.min.js"></script>
+    <script src="assets/plugins/js/magnific-popup.min.js"></script>
+    <script src="assets/plugins/js/jquery.counterup.min.js"></script>
+    <script src="assets/plugins/js/waypoints.min.js"></script>
+    <script src="assets/plugins/js/nice-select.min.js"></script>
+    <script src="assets/plugins/js/ep-cursor.js"></script>
+    <script src="assets/plugins/js/backToTop.js"></script>
+    <script src="assets/plugins/js/active.js"></script>
+  </body>
+</html>

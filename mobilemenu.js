@@ -49,6 +49,9 @@ class MyMobileMenu extends HTMLElement {
               
             </li>
             <li>
+              <a href="blog-2.html">Blog 2</a>
+            </li>
+            <li>
               <a href="contact.html">Contact</a>
             </li>
           </ul>
