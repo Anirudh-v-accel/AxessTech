@@ -62,7 +62,7 @@
     return res.json();
   }
 
-  // Shape helpers (support Strapi v5 Documents API and legacy v4 attributes API)
+  
   function doc(item) {
     // v5 returns flattened fields; v4 returns { attributes: { ... } }
     return item && (item.attributes ?? item);

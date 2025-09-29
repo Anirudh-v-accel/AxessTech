@@ -253,8 +253,7 @@ class MyModalContactForm extends HTMLElement {
     const authorized = document.getElementById("authorization").checked
 
     const SCRIPT_URL =
-      "https://script.google.com/macros/s/AKfycbzGbu9ecU6UzzENo9KKmtlSzUhC5NaBpvyQelLl8aXL5CoLO_kuuvQqPCQ3guUDI5Ku/exec"
-
+      "https://script.google.com/macros/s/AKfycbza8sSffFy8T0ALF0cuaUEu-cMRy2gmKgmoBjjGKDpJCoveIww3p1Znl1xmnUUaz4GRaQ/exec"
     try {
       // Prepare form data
       const formData = {

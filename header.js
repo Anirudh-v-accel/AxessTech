@@ -38,7 +38,7 @@ class MyHeader extends HTMLElement {
                             </ul>
                           </li>
                           <li><a href="https://axesstechnology.in/blog/">Blog</a></li>
-                          <li><a href="blog-2.html">Blog 2</a></li>
+                          <!-- <li><a href="blog-2.html">Blog 2</a></li> -->
                           <li><a href="contact.html">Contact</a></li>
                         </ul>
                       </nav>
